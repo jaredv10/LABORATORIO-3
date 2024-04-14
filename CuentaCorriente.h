@@ -17,7 +17,7 @@ private:
 
 
 public:
-       // Constructores
+      
           CuentaCorriente();
           CuentaCorriente(string nombre, string apellidos, string direccion, string telefono, double saldo);
 
