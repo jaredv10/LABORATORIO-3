@@ -30,7 +30,7 @@ void CuentaCorriente::retirarDinero(double cantidad) {
     if (cantidad <= saldo) {
         saldo -= cantidad;
     } else {
-        cout << "Saldo insuficiente.\n";
+        cout << "Eror, Saldo insuficiente.\n";
     }
 }
 
