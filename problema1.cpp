@@ -55,10 +55,10 @@ int problema1() {
             cuenta.consultarCuenta();
             break;
         case 5:
-            cout << "Saliendo...\n";
+            cout << "Saliendo... Completado\n";
             break;
         default:
-            cout << "Opcion invalida. Por favor, intente de nuevo.\n";
+            cout << "Opcion invalida intentelo de nuevo.\n";
             break;
         }
     } while (opcion != 5);
