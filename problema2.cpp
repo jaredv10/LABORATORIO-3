@@ -4,9 +4,6 @@
 using namespace std;
 
 
-#include "ArchivoTexto.h"
-#include <iostream>
-
 int problema2() {
     ArchivoTexto archivo;
     string ruta;
