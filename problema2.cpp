@@ -9,26 +9,26 @@ using namespace std;
 
 int problema2() {
     ArchivoTexto archivo;
-    std::string ruta;
+    string ruta;
     char opcion;
 
     do {
-        std::cout << "Ingrese 'r' para leer un archivo, 'w' para escribir en un archivo, 'q' para salir: ";
-        std::cin >> opcion;
-        std::cin.ignore();
+        cout << "Ingrese 'r' para leer un archivo, 'w' para escribir en un archivo, 'q' para salir: ";
+        cin >> opcion;
+        cin.ignore();
 
         if (opcion == 'w' || opcion == 'W') {
-            std::cout << "Ingrese la ruta del archivo donde desea escribir: ";
-            std::getline(std::cin, ruta);
+            cout << "Ingrese la ruta del archivo donde desea escribir: ";
+            getline(cin, ruta);
             archivo.escribir(ruta);
         } else if (opcion == 'r' || opcion == 'R') {
-            std::cout << "Ingrese la ruta del archivo que desea leer: ";
-            std::getline(std::cin, ruta);
+            cout << "Ingrese la ruta del archivo que desea leer: ";
+            getline(cin, ruta);
             archivo.leer(ruta);
         } else if (opcion == 'q' || opcion == 'Q') {
-            std::cout << "Saliendo del programa.\n";
+            cout << "Saliendo del programa.\n";
         } else {
-            std::cout << "Opción no válida.\n";
+            cout << "Opción no valida.\n";
         }
     } while (opcion != 'q' && opcion != 'Q');
 
