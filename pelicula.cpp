@@ -2,6 +2,8 @@
 #include <string>
 #include "pelicula.h"
 
+using namespace std;
+
 Duracion::Duracion(int h, int m, int s) : horas(h), minutos(m), segundos(s) {}
 
 int Duracion::getHoras() { return horas; }
@@ -11,18 +13,18 @@ void Duracion::setHoras(int h) { horas = h; }
 void Duracion::setMinutos(int m) { minutos = m; }
 void Duracion::setSegundos(int s) { segundos = s; }
 
-Pelicula::Pelicula(std::string n, std::string d, int a, std::string g, Duracion dur)
+Pelicula::Pelicula(string n, string d, int a, string g, Duracion dur)
     : nombre(n), director(d), anioLanzamiento(a), genero(g), duracion(dur) {}
 
-std::string Pelicula::getNombre() { return nombre; }
-std::string Pelicula::getDirector() { return director; }
+string Pelicula::getNombre() { return nombre; }
+string Pelicula::getDirector() { return director; }
 int Pelicula::getAnioLanzamiento() { return anioLanzamiento; }
-std::string Pelicula::getGenero() { return genero; }
+string Pelicula::getGenero() { return genero; }
 Duracion Pelicula::getDuracion() { return duracion; }
 
-void Pelicula::setNombre(std::string n) { nombre = n; }
-void Pelicula::setDirector(std::string d) { director = d; }
+void Pelicula::setNombre(string n) { nombre = n; }
+void Pelicula::setDirector(string d) { director = d; }
 void Pelicula::setAnioLanzamiento(int a) { anioLanzamiento = a; }
-void Pelicula::setGenero(std::string g) { genero = g; }
+void Pelicula::setGenero(string g) { genero = g; }
 void Pelicula::setDuracion(Duracion dur) { duracion = dur; }
 
