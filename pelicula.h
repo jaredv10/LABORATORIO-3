@@ -3,7 +3,7 @@
 #include <iostream>
 #include <string>
 
-
+using namespace std;
 
 class Duracion {
 private:
@@ -22,22 +22,22 @@ public:
 
 class Pelicula {
 private:
-    std::string nombre;
-    std::string director;
+    string nombre;
+    string director;
     int anioLanzamiento;
-    std::string genero;
+    string genero;
     Duracion duracion;
 public:
-    Pelicula(std::string n = "", std::string d = "", int a = 0, std::string g = "", Duracion dur = Duracion());
-    std::string getNombre();
-    std::string getDirector();
+    Pelicula(string n = "", string d = "", int a = 0, string g = "", Duracion dur = Duracion());
+    string getNombre();
+    string getDirector();
     int getAnioLanzamiento();
-    std::string getGenero();
+    string getGenero();
     Duracion getDuracion();
-    void setNombre(std::string n);
-    void setDirector(std::string d);
+    void setNombre(string n);
+    void setDirector(string d);
     void setAnioLanzamiento(int a);
-    void setGenero(std::string g);
+    void setGenero(string g);
     void setDuracion(Duracion dur);
 };
 
