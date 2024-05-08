@@ -5,7 +5,7 @@ using namespace std;
 
 
 ArchivoTexto::ArchivoTexto() {  // Implementación del constructor por defecto
-    // Aquí puedes inicializar cualquier miembro de la clase si es necesario
+    
 }
 
 
